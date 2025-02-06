@@ -1,0 +1,132 @@
+/* Fuente, fondo general y color de texto negro */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f7f7;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  /* Tarjeta de cada propiedad */
+  .card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  /* Columna de inputs */
+  .property-inputs {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+  }
+  
+  /* Columna de resultados */
+  .property-result {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  /* Grupo de input y etiqueta */
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #000;
+  }
+  
+  /* Estilos para los inputs y campos de react-number-format */
+  .input-group input,
+  .input-field {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #ffffff;
+  }
+  
+  /* Botones */
+  .btn {
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 10px 5px 0 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #115293;
+  }
+  
+  /* Tarjeta de resultados */
+  .result-card,
+  .result-card-placeholder {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    min-height: 150px;
+    color: #000;
+  }
+  
+  .result-card {
+    background-color: #fafafa;
+  }
+  
+  .result-card-placeholder {
+    border: 1px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+  }
+  
+  /* Resumen Global */
+  .summary-card {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+    color: #000;
+  }
+  
+  /* Encabezados */
+  h2, h3, h4 {
+    margin: 0 0 10px 0;
+    color: #000;
+  }
+  
+  /* Botones de acción (agregar propiedad y simular) */
+  .action-buttons {
+    text-align: center;
+  }
+  
+  /* Diseño responsivo */
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+    }
+  }
+  
