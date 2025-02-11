@@ -91,7 +91,7 @@ function Simulador() {
     try {
       const results = await Promise.all(
         properties.map(async (property) => {
-          const response = await fetch("http://127.0.0.1:5000/simular", {
+          const response = await fetch("https://tu-api-en-render.onrender.com/simular", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(property),
